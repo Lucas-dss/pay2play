@@ -10,7 +10,6 @@ body {
   background-color: #f4f4f4; /* Cor de fundo da página */
   padding: 0; /* Espaçamento interno */
 }
-
 /* Estiliza o cabeçalho */
 /* Estiliza a seção do produto */
 .produto {
@@ -113,9 +112,9 @@ button {
 /* Estiliza o botão ao passar o mouse (hover) */
 button:hover {
   background-image: linear-gradient(
-    to bottom right,
-    rgb(244, 162, 243),
-    rgb(125, 94, 239)
+    to bottom left,
+    rgb(162, 218, 244),
+    rgb(101, 70, 211, 0.6)
   ); /* Cor verde mais clara */
   color: #fff;
 }

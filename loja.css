@@ -1,14 +1,15 @@
 /* Estilo para o contêiner principal */
 .container {
-  margin: 10px;
+  text-align: center;
+  margin: 17px;
   display: flex; /* Define o contêiner como um flexbox */
   gap: 2.5%; /* Espaçamento entre os cards */
   flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
-  text-align: center;
 }
 
 /* Estilo para cada card */
 .card {
+  text-align: center;
   background-image: linear-gradient(
     to bottom left,
     rgb(162, 218, 244),
@@ -16,12 +17,14 @@
   );
   border: 3px dotted #ffffff;
   border-radius: 8px; /* Arredonda os cantos dos cards */
-  padding: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
   flex: 1; /* Permite que os cards cresçam igualmente */
   transition: all 1s;
 }
-.card img, iframe {
+.card iframe {
   transition: all 0.5s;
   border-radius: 8px; /* Arredonda os cantos dos cards */
 }

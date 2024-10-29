@@ -33,6 +33,9 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
   flex: 1; /* Permite que os cards cresçam igualmente */
 }
+.clearfix{
+  margin: 2%;
+}
 .clearfix::after {
   content: "";
   clear: both;
@@ -135,4 +138,12 @@
   .modal-content {
     width: 100%;
   }
+}
+.banner {
+  width: 100%;
+  background-image: linear-gradient(
+    to top left,
+    rgb(162, 218, 244),
+    rgb(101, 70, 211)
+  );
 }
