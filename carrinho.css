@@ -1,0 +1,62 @@
+main{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Estiliza a tabela do carrinho */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Estiliza o input da quantidade */
+input.quantidade{
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+/* Estiliza o botão de remover */
+button.remover-produto{
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c0392b;
+}
+button.remover-produto:hover {
+    background-image: linear-gradient(
+    to bottom left,
+    rgb(162, 218, 244),
+    rgb(101, 70, 211, 0.6)
+  ); /* Cor verde mais clara */
+  color: #fff;
+}
+/* Estiliza o total final */
+.total-final{
+    margin-top: 20px;
+}
+.total-final h3{
+    color: #333;
+    text-align: right;
+}
+#total-final{
+    background-image: linear-gradient(
+    to bottom right,
+    rgb(162, 172, 244),
+    rgb(75, 63, 119)
+  );
+  color: #fff;
+}

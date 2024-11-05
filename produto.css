@@ -1,0 +1,185 @@
+/* Aplica margens e padding zerados para todos os elementos e define o box-sizing */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estiliza o corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte geral */
+  background-color: #f4f4f4; /* Cor de fundo da página */
+  padding: 0; /* Espaçamento interno */
+}
+/* Estiliza o cabeçalho */
+/* Estiliza a seção do produto */
+.produto {
+  display: flex; /* Usa o flexbox para organizar o layout */
+  justify-content: space-around; /* Distribui o espaço entre os elementos */
+  background-image: linear-gradient(
+    to top left,
+    rgb(162, 218, 244),
+    rgb(101, 70, 211)
+  );
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do elemento */
+}
+
+/* Estiliza a div que contém as imagens do produto */
+.imagens-produto {
+  flex: 1; /* Ocupa 1 parte do espaço disponível */
+  margin-left: 10%;
+}
+
+/* Estiliza a imagem principal do produto */
+.imagem-principal {
+  width: 100%; /* A imagem ocupa 100% da largura da div */
+  max-width: 400px; /* Define um tamanho máximo para a imagem */
+  margin-top: 10%; /* Espaçamento superior */
+  margin-bottom: 5%; /* Espaçamento inferior */
+  border-radius: 25px;
+  height: 320px;
+  box-shadow: 0 0 60px rgb(0, 0, 0);
+}
+
+/* Estiliza as miniaturas das imagens */
+.miniaturas img {
+  width: 90px; /* Largura fixa das miniaturas */
+  height: 70px; /* Altura fixa das miniaturas */
+  cursor: pointer; /* O cursor muda para pointer ao passar sobre as miniaturas */
+  border-radius: 25px;
+}
+
+.miniaturas img:hover {
+  opacity: 50%;
+  box-shadow: 0 0 60px rgb(255, 255, 255);
+
+}
+
+/* Estiliza a div que contém os detalhes do produto */
+.detalhes-produto {
+  flex: 1; /* Ocupa 1 parte do espaço disponível */
+  margin-right: 10%;
+}
+
+/* Estiliza o nome do produto */
+h2 {
+  background-color: rgb(255, 255, 255, 0.8);
+  text-align: center;
+  color: #000000; /* Cor do texto */
+  box-shadow: 0 8px 6px rgb(255, 255, 255, 0.5);
+  font-style: italic;
+  width: 35%;
+  margin-left: 35%;
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estiliza a descrição do produto */
+.descricao {
+  color: #ffffff; /* Cor mais clara para a descrição */
+  margin: 5%;
+  background-color: purple;
+  box-shadow: 0 0 20px 10px purple;
+  width: 55%;
+  margin-left: 25.5%;
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estiliza o preço do produto */
+.preco {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255, 0.5));
+  border: dashed;
+  color: purple;
+  font-size: 24px; /* Tamanho maior para destacar */
+  padding: 0;
+  box-shadow: 0 0 20px 10px white;
+  font-style: italic;
+  width: 60%;
+  margin-left: 24%;
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estiliza o formulário de opções de compra */
+.opcoes-compra {
+  display: flex; /* Organiza em colunas usando flexbox */
+  flex-direction: column; /* As opções ficam uma abaixo da outra */
+}
+
+/* Estiliza os rótulos (labels) dos selects */
+label {
+  text-align: center;
+  color: purple;
+  margin-bottom: 5px; /* Espaçamento inferior */
+  font-weight: bold; /* Negrito para o texto */
+  margin-left: 8%;
+}
+
+/* Estiliza os campos de seleção (selects) */
+select {
+  text-align: center;
+  padding: 8px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Espaçamento inferior */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 3px dashed rgb(255, 255, 255); /* Borda cinza clara */
+  width: 70%;
+  margin-left: 20%;
+}
+
+/* Estiliza o botão de compra */
+button {
+  transition: all 1s;
+  padding: 3px; /* Espaçamento interno */
+  background-color: #fff; /* Cor de fundo */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+  font-size: 20px; /* Tamanho da fonte */
+  width: 40%;
+  margin-left: 35%;
+}
+
+/* Estiliza o botão ao passar o mouse (hover) */
+button:hover {
+  transition: all 1s;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(162, 218, 244),
+    rgb(101, 70, 211, 0.6)
+  ); /* Cor verde mais clara */
+  color: #fff;
+}
+
+/* Estiliza a seção de comentários */
+.comentarios {
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estiliza cada comentário */
+.comentario {
+  display: flex; /* Exibe a foto e o texto lado a lado */
+  align-items: center; /* Alinha a foto e o texto verticalmente */
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgb(230, 226, 240)
+  );
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do comentário */
+  margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estiliza a foto do usuário */
+.foto-usuario {
+  width: 50px; /* Largura da foto */
+  height: 50px; /* Altura da foto */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  margin-right: 15px; /* Espaçamento à direita da foto */
+}
+/* Estiliza o texto dos comentários */
+.comentario p {
+  color: #333;
+}
+.pz {
+  font-size: 5px;
+  margin: 0;
+}

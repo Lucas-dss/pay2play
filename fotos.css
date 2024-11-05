@@ -1,0 +1,35 @@
+/* container da galeria usando Flexbox */
+.galeria-container {
+  display: flex; /* Define o contêiner como um flexbox */
+  /*display: grid; /* Ativa o CSS grid */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+  /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+  justify-content: space-around;
+  gap: 10px;
+  padding: 20px;
+  width: 80%;
+}
+.galeria-container:hover .galeria-item {
+  opacity: 0.5;
+}
+.galeria-container .galeria-item:hover {
+  opacity: 1;
+}
+/* cada item da galeria */
+.galeria-item {
+  margin: 10px;
+  border: 2px dotted #ffffff;
+  /*border-radius: 8px; /* Arredonda os cantos dos cards */
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  transition: all 0.3s;
+}
+.galeria-item:hover {
+  transform: translateY(-10%);
+}
+/* Estilos para as imagens */
+.galeria-item img {
+  width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+  height: auto; /* Mantém a proporção da imagem */
+}
