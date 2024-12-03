@@ -265,8 +265,13 @@ footer {
     max-width: 350px;
     min-height: 440px;
   }
+  .slider,
+  .slides,
+  .slide {
+    min-height: 440px;
+    min-width: 240px;
+  }
 }
-
 @media (max-width: 480px) {
   /* Ajuste dos tamanhos para telas muito pequenas */
   nav ul li a {
@@ -279,6 +284,10 @@ footer {
   .caixa img {
     max-width: 125px;
     min-height: 750px;
+  }
+  thead,
+  tbody {
+    width: 125px;
   }
 }
 
